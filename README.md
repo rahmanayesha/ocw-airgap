@@ -22,3 +22,6 @@ kind create cluster
 
 ## Todo
 - [ ] Add local registry for images
+- [ ] Add remote repository that is mirrored to our local gitea repository
+- [ ] Create a git repository structure that works for many environments
+- [ ] Verify the combination of Helm and Kustomize
