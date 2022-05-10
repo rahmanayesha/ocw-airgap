@@ -1,0 +1,1 @@
+kubectl port-forward svc/gitea-http 3000

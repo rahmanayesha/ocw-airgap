@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flux-pod
+  labels:
+    app: flux-pod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flux-pod
+  template:
+    metadata:
+      labels:
+        app: flux-pod
+    spec:
+      containers:
+      - name: flux-pod
+        image: fluxcd/flux-cli:v0.27.4
+        command:
+          - sleep
+          - "99999"

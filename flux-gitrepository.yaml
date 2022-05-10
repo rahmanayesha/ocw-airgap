@@ -1,0 +1,12 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: flux-repo
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  url: ssh://git@gitea-ssh.default.svc.cluster.local/flux_robot/flux-repo
+  ref:
+    branch: main
+  secretRef:
+    name: flux-repo-auth
