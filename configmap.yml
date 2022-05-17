@@ -4,4 +4,4 @@ metadata:
   name: flux-demo
   namespace: default
 data:
-  hello: "world is here"
+  hello: "world is right here right now"
